@@ -1,0 +1,278 @@
+/* Import de Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Variables */
+:root {
+  --white-winter: #f4f9f9;
+  --blue-principal: #001A6E;
+  --blue-secondary: #074799;
+  --blue-deep: #00071E;
+}
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family:  "Poppins", serif;
+}
+
+main {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+ul, li {
+  list-style: none;
+}
+
+/* MENU */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--white-winter);
+}
+
+.menuContainer {
+  width: 1140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menuContainer h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--blue-principal);
+}
+
+.menuContainer nav {
+  display: flex;
+  align-items: center;
+}
+
+.menuContainer nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.menuContainer nav ul li {
+  margin-right: 1rem;
+}
+
+.menuContainer nav ul li a {
+  font-size: 1.4rem;
+  font-weight: regular;
+  color: var(--blue-principal);
+  text-decoration: none;
+}
+
+.menuContainer nav ul li a:hover {
+  color: var(--blue-secondary);
+}
+
+.active {
+  color: var(--blue-secondary) !important;
+  font-weight: 700;
+}
+
+/* Hero */
+
+.hero {
+  position: relative; 
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.heroImage img {
+  width: 100%; 
+  max-width: 1400px;
+  height: 60rem;
+  border-radius: 15px;
+  object-fit: cover; 
+}
+
+.heroText {
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem 4rem 1rem;
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-radius: 10px; 
+}
+
+.heroText h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.heroText p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 1rem 0 3rem;
+}
+.heroText a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 10px 20px;
+  background-color: var(--blue-principal);
+  border-radius: 5px;
+}
+
+.heroText a:hover {
+  background-color: var(--blue-secondary);
+}
+
+/* PAGINA ACTIVIDADES */
+
+/* PAGINA TESTIMONIOS */
+.heroTestimonios{
+  background-image: url('../images/frozenLake.jpg');
+  width: 1140px;
+  height: 250px;
+  background-size: cover; 
+  background-position: center;
+}
+
+.userPhoto {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.stars {
+  color: #ffc107; 
+  margin-bottom: 10px;
+}
+.opinion {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+.edadComentario {
+  color: #6c757d; 
+  font-size: 1.5rem;
+}
+
+
+
+/* FOOTER */
+
+footer {
+  background-color: var(--blue-deep);
+  color: var(--white-winter);
+  padding: 5rem 0;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+footer .footerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1140px;
+  margin: 0 auto;
+}
+
+/* INFO */
+
+footer .footerContainer .info {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footerContainer .info div {
+  width: 30rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+}
+
+footer .footerContainer .info div h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+footer .footerContainer .info div p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+/* SOCIAL */
+
+footer .footerContainer .socialMedia {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.footerContainer .socialMedia a {
+  margin: 0 1rem;
+}
+
+.footerContainer .socialMedia a i {
+  font-size: 2rem;
+  color: var(--white-winter);
+}
+
+/* RESONSIVE */
+
+/* Responsive para tablets (768px) */
+@media (max-width: 768px) {
+  .menuContainer {
+    width: 90%;
+  }
+
+  .menuContainer h1 {
+    font-size: 2rem;
+  }
+
+  .menuContainer nav ul {
+    gap: 1rem;
+  }
+
+  .menuContainer nav ul li a {
+    font-size: 1.4rem;
+  }
+}
+
+/* Responsive para celulares (480px) */
+@media (max-width: 480px) {
+  .menuContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menuContainer h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .menuContainer nav {
+    width: 100%;
+  }
+
+  .menuContainer nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
