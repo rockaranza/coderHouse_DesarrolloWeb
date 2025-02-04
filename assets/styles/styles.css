@@ -165,7 +165,15 @@ header {
   font-size: 1.5rem;
 }
 
+/* estilos especial para footer Bootstrap*/
+.bgColor {
+  background-color: var(--blue-deep);
+}
 
+.txtLink {
+  color: var(--white-winter);
+  text-decoration: none;
+}
 
 /* FOOTER */
 
