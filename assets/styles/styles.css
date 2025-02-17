@@ -3,7 +3,7 @@
 
 /* Variables */
 :root {
-  --white-winter: #f4f9f9;
+  --white-winter: #f0f0f0;
   --blue-principal: #001A6E;
   --blue-secondary: #074799;
   --blue-deep: #00071E;
@@ -83,20 +83,21 @@ header {
   font-weight: 700;
 }
 
+/* INICIO */
 /* Hero */
 
 .hero {
   position: relative; 
   width: 100%;
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 3rem auto;
 }
 
 .heroImage img {
   width: 100%; 
   max-width: 1400px;
   height: 60rem;
-  border-radius: 15px;
+  border-radius: 1.5rem;
   object-fit: cover; 
 }
 
@@ -133,6 +134,205 @@ header {
 .heroText a:hover {
   background-color: var(--blue-secondary);
 }
+
+/* Seccion Activities */
+
+.activitiesHome {
+  margin: 4rem 0;
+}
+
+.activitiesHome h2 {
+  font-size: 2.4rem;
+  color: var(--blue-principal);
+  font-weight: 700;
+  padding: 2rem 0;
+}
+
+.activities {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.activities h2 {
+  margin-bottom: 2rem;
+}
+
+.activities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.activity {
+  max-width: 25rem;
+  background: var(--white-winter);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.activity img {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+
+.activity h3 {
+  margin: 10px 0;
+  font-size: 1.6rem;
+}
+
+.activity p {
+  margin: 3rem 0;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.activity a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  background-color: var(--blue-principal);
+  border-radius: 0.5rem;
+}
+
+.activity a:hover {
+  background-color: var(--blue-secondary);
+}
+
+/* Sección whyUs*/
+
+.whyUs {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.whyUs h2 {
+  font-size: 2.4rem;
+  color: var(--blue-principal);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.whyUsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.whyUsText {
+  padding: 1rem 2rem;
+  text-align: left;
+}
+
+.whyUsText p {
+  font-size: 1.2rem;
+}
+
+/* Sección Newsletters */
+.newslettersContainer {
+  max-width: 1400px;
+  margin: 10rem auto;
+  text-align: center;
+}
+
+.newsletters {
+  background: url('../images/frozenLake.jpg') no-repeat center center/cover;
+  border-radius: 1.5rem;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.newsletters h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.newsletters form {
+  display: flex;
+  gap: 1rem;
+}
+
+.newsletters input {
+  padding: 1rem;
+  border: none;
+  border-radius: 5rem;
+  width: 25rem;
+  font-size: 1.5rem;
+}
+
+.newsletters button {
+  padding: 1rem 2rem;
+  border: none;
+  background: var(--blue-principal);
+  color: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 1.5rem;
+}
+
+.newsletters button:hover {
+  background: var(--blue-secondary);
+}
+
+/* Sección aboutUs */
+.aboutUsContainer {
+  max-width: 1400px;
+  margin: 10rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.aboutUs, .mapContainer {
+  width: 50%;
+}
+
+.aboutUs {
+  padding: 2rem;
+}
+
+.aboutUs h2 {
+  font-size: 2.4rem;
+  color: var(--blue-principal);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.aboutUs p {
+  font-size: 1.4rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.mapContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.mapContainer iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 1.5rem;
+}
+
+
+
 
 /* PAGINA ACTIVIDADES */
 
@@ -297,7 +497,7 @@ footer .footerContainer .socialMedia {
     width: 768px;
   }
 
-  /* menu */
+  /* Menu */
   .menuContainer {
     width: 90%;
   }
@@ -313,6 +513,47 @@ footer .footerContainer .socialMedia {
   .menuContainer nav ul li a {
     font-size: 1.4rem;
   }
+
+  /* INICIO */
+
+  @media (max-width: 768px) {
+    .heroImage img {
+      height: 40rem;
+    }
+    .heroText {
+      width: 60rem;
+    }
+    .heroText h2 {
+      font-size: 2.5rem;
+    }
+    .heroText p {
+      font-size: 1.3rem;
+    }
+    .activities {
+      flex-direction: row;
+    }
+    .whyUsContainer {
+      grid-template-columns: 1fr;
+    }
+    .newsletters {
+      padding: 3rem;
+    }
+    .newsletters form {
+      flex-direction: column;
+      align-items: center;
+    }
+    .newsletters input {
+      width: 100%;
+    }
+    .aboutUsContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+    .aboutUs, .mapContainer {
+      width: 100%;
+    }
+  }
+  
 
   /* TESTIMONIOS */
   .heroTestimonios{
@@ -357,6 +598,50 @@ footer .footerContainer .socialMedia {
     align-items: center;
     gap: 0.5rem;
   }
+
+  /* INICIO */
+
+  @media (max-width: 480px) {
+    .heroImage img {
+      height: 30rem;
+    }
+    .heroText {
+      padding: 1.5rem;
+      width: 30rem;
+    }
+    .heroText h2 {
+      font-size: 2rem;
+    }
+    .heroText p {
+      font-size: 1.2rem;
+    }
+    .activitiesHome h2, .whyUs h2, .newsletters h2, .aboutUs h2 {
+      font-size: 2rem;
+    }
+    .activity {
+      max-width: 100%;
+      padding: 1rem;
+    }
+    .activity img {
+      height: 20rem;
+    }
+    .whyUsText p {
+      font-size: 1rem;
+    }
+    .newsletters {
+      padding: 2rem;
+    }
+    .newsletters input {
+      font-size: 1.2rem;
+    }
+    .newsletters button {
+      font-size: 1.2rem;
+    }
+    .aboutUs p {
+      font-size: 1.2rem;
+    }
+  }
+  
 
   /* TESTIMONIOS */
   .heroTestimonios{
