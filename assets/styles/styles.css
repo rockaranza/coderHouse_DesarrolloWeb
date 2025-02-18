@@ -113,7 +113,7 @@ header {
   border-radius: 10px; 
 }
 
-.heroText h2 {
+.heroText h1 {
   font-size: 3rem;
   font-weight: 700;
 }
@@ -360,7 +360,7 @@ header {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.searchContainer h2 {
+.searchContainer h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
@@ -620,6 +620,11 @@ header {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.contactForm form h1 {
+  color: var(--blue-principal);
+  font-weight: 700;
 }
 
 .contactForm input,
