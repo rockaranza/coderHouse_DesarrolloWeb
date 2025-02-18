@@ -542,4 +542,220 @@ footer .footerContainer {
   justify-content: space-between;
   width: 1140px;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 768px;
+  }
+  .menuContainer {
+    width: 90%;
+  }
+  .menuContainer h1 {
+    font-size: 2rem;
+  }
+  .menuContainer nav ul {
+    gap: 1rem;
+  }
+  .menuContainer nav ul li a {
+    font-size: 1.4rem;
+  }
+  .heroImage img {
+    height: 40rem;
+  }
+  .heroText {
+    width: 60rem;
+  }
+  .heroText h1 {
+    font-size: 2.4rem;
+  }
+  .heroText p {
+    font-size: 1.4rem;
+  }
+  .activities {
+    flex-direction: row;
+  }
+  .whyUsContainer {
+    grid-template-columns: 1fr;
+  }
+  .newsletters {
+    padding: 3rem;
+  }
+  .newsletters form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .newsletters form input {
+    width: 100%;
+  }
+  .aboutUsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutUsContainer .aboutUs, .aboutUsContainer .mapContainer {
+    width: 100%;
+  }
+  .heroSearch {
+    width: 80%;
+    height: 20rem;
+    padding: 1.5rem;
+    margin: 2rem auto;
+  }
+  .heroSearch .searchContainer {
+    width: 90%;
+    padding: 1.5rem;
+  }
+  .heroSearch .searchContainer h1 {
+    font-size: 2rem;
+  }
+  .heroSearch .searchContainer form {
+    flex-direction: row;
+    gap: 0.75rem;
+  }
+  .heroSearch .searchContainer form select, .heroSearch .searchContainer form button {
+    width: 100%;
+  }
+  .activitiesContainer {
+    width: 80%;
+    margin: 3rem auto;
+    gap: 1.5rem;
+  }
+  .activitiesContainer .cardAct {
+    flex-direction: column;
+  }
+  .activitiesContainer .cardAct .cardImage {
+    width: 100%;
+  }
+  .activitiesContainer .cardAct .cardText {
+    width: 100%;
+    padding: 1.2rem;
+  }
+  .activitiesContainer .cardAct .cardText h3 {
+    font-size: 2rem;
+  }
+  .activitiesContainer .cardAct .cardText p {
+    font-size: 1.4rem;
+  }
+  .heroTestimonios {
+    width: 768px;
+  }
+  .contactContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+@media (max-width: 480px) {
+  main {
+    width: 420px;
+  }
+  .menuContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .menuContainer h1 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  .menuContainer nav {
+    width: 100%;
+  }
+  .menuContainer nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .heroImage img {
+    height: 30rem;
+  }
+  .heroText {
+    padding: 1.5rem;
+    width: 30rem;
+  }
+  .heroText h1 {
+    font-size: 2rem;
+  }
+  .heroText p {
+    font-size: 1.4rem;
+  }
+  .activitiesHome h2, .whyUs h2, .newsletters h2, .aboutUs h2 {
+    font-size: 2rem;
+  }
+  .activity {
+    max-width: 100%;
+    padding: 1rem;
+  }
+  .activity img {
+    height: 20rem;
+  }
+  .whyUsText p {
+    font-size: 1.2rem;
+  }
+  .newsletters {
+    padding: 2rem;
+  }
+  .newsletters input {
+    font-size: 1.4rem;
+  }
+  .newsletters button {
+    font-size: 1.4rem;
+  }
+  .aboutUs p {
+    font-size: 1.4rem;
+  }
+  .heroSearch {
+    height: 20rem;
+    padding: 1rem;
+  }
+  .heroSearch .searchContainer {
+    width: 95%;
+    padding: 1rem;
+  }
+  .heroSearch .searchContainer h1 {
+    font-size: 1.6rem;
+  }
+  .heroSearch .searchContainer form {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .heroSearch .searchContainer form select, .heroSearch .searchContainer form button {
+    font-size: 1.4rem;
+  }
+  .activitiesContainer {
+    margin: 2rem auto;
+    gap: 1rem;
+  }
+  .activitiesContainer .cardText {
+    padding: 1rem;
+  }
+  .activitiesContainer .cardText h3 {
+    font-size: 1.6rem;
+  }
+  .activitiesContainer .cardText p {
+    font-size: 1.4rem;
+  }
+  .activitiesContainer .cardText a {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+  .cityCard {
+    width: 90%;
+  }
+  .heroTestimonios {
+    width: 420px;
+  }
+  .contactContainer {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  .contactContainer input, .contactContainer textarea {
+    font-size: 1.2rem;
+    padding: 8px;
+  }
+  .contactContainer button {
+    font-size: 1.2rem;
+    padding: 8px;
+  }
 }/*# sourceMappingURL=styles.css.map */

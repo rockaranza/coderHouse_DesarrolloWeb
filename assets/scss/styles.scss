@@ -642,3 +642,300 @@ footer {
 
   }
 }
+
+// Responsive
+// Responsive para tablets (768px)
+@include responsive(tablet) {
+  main {
+    width: 768px;
+  }
+
+  .menuContainer {
+    width: 90%;
+
+    h1 {
+      font-size: map-get($font-sizes, xlarge);
+    }
+
+    nav ul {
+      gap: 1rem;
+
+      li a {
+        font-size: map-get($font-sizes, medium);
+      }
+    }
+  }
+
+  // Hero Section
+  .heroImage img {
+    height: 40rem;
+  }
+
+  .heroText {
+    width: 60rem;
+
+    h1 {
+      font-size: map-get($font-sizes, xxlarge);
+    }
+
+    p {
+      font-size: map-get($font-sizes, medium);
+    }
+  }
+
+  // Activities Section
+  .activities {
+    flex-direction: row;
+  }
+
+  // Why Us Section
+  .whyUsContainer {
+    grid-template-columns: 1fr;
+  }
+
+  // Newsletters Section
+  .newsletters {
+    padding: 3rem;
+
+    form {
+      flex-direction: column;
+      align-items: center;
+
+      input {
+        width: 100%;
+      }
+    }
+  }
+
+  // About Us Section
+  .aboutUsContainer {
+    flex-direction: column;
+    align-items: center;
+
+    .aboutUs, .mapContainer {
+      width: 100%;
+    }
+  }
+
+  // Activities Page
+  .heroSearch {
+    width: 80%;
+    height: 20rem;
+    padding: 1.5rem;
+    margin: 2rem auto;
+
+    .searchContainer {
+      width: 90%;
+      padding: 1.5rem;
+
+      h1 {
+        font-size: map-get($font-sizes, xlarge);
+      }
+
+      form {
+        flex-direction: row;
+        gap: 0.75rem;
+
+        select, button {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .activitiesContainer {
+    width: 80%;
+    margin: 3rem auto;
+    gap: 1.5rem;
+
+    .cardAct {
+      flex-direction: column;
+
+      .cardImage {
+        width: 100%;
+      }
+
+      .cardText {
+        width: 100%;
+        padding: 1.2rem;
+
+        h3 {
+          font-size: map-get($font-sizes, xlarge);
+        }
+
+        p {
+          font-size: map-get($font-sizes, medium);
+        }
+      }
+    }
+  }
+
+  // Testimonials Page
+  .heroTestimonios {
+    width: 768px;
+  }
+
+  // Contact Page
+  .contactContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+
+// Responsive para ceuluares (480px)
+@include responsive(mobile) {
+  main {
+    width: 420px;
+  }
+
+  // Menu
+  .menuContainer {
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-size: map-get($font-sizes, large);
+      margin-bottom: 1rem;
+    }
+
+    nav {
+      width: 100%;
+
+      ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    }
+  }
+
+  // Hero Section
+  .heroImage img {
+    height: 30rem;
+  }
+
+  .heroText {
+    padding: 1.5rem;
+    width: 30rem;
+
+    h1 {
+      font-size: map-get($font-sizes, xlarge);
+    }
+
+    p {
+      font-size: map-get($font-sizes, medium);
+    }
+  }
+
+  // Activities Section
+  .activitiesHome h2, .whyUs h2, .newsletters h2, .aboutUs h2 {
+    font-size: map-get($font-sizes, xlarge);
+  }
+
+  .activity {
+    max-width: 100%;
+    padding: 1rem;
+
+    img {
+      height: 20rem;
+    }
+  }
+
+  // Why Us Section
+  .whyUsText p {
+    font-size: map-get($font-sizes, small);
+  }
+
+  // Newsletters Section
+  .newsletters {
+    padding: 2rem;
+
+    input {
+      font-size: map-get($font-sizes, medium);
+    }
+
+    button {
+      font-size: map-get($font-sizes, medium);
+    }
+  }
+
+  // About Us Section
+  .aboutUs p {
+    font-size: map-get($font-sizes, medium);
+  }
+
+  // Activities Page
+  .heroSearch {
+    height: 20rem;
+    padding: 1rem;
+
+    .searchContainer {
+      width: 95%;
+      padding: 1rem;
+
+      h1 {
+        font-size: map-get($font-sizes, large);
+      }
+
+      form {
+        flex-direction: column;
+        gap: 0.5rem;
+
+        select, button {
+          font-size: map-get($font-sizes, medium);
+        }
+      }
+    }
+  }
+
+  .activitiesContainer {
+    margin: 2rem auto;
+    gap: 1rem;
+
+    .cardText {
+      padding: 1rem;
+
+      h3 {
+        font-size: map-get($font-sizes, large);
+      }
+
+      p {
+        font-size: map-get($font-sizes, medium);
+      }
+
+      a {
+        width: 100%;
+        font-size: map-get($font-sizes, medium);
+      }
+    }
+  }
+
+  // Destinations Page
+  .cityCard {
+    width: 90%;
+  }
+
+  // Testimonials Page
+  .heroTestimonios {
+    width: 420px;
+  }
+
+  // Contact Page
+  .contactContainer {
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+    input, textarea {
+      font-size: map-get($font-sizes, small);
+      padding: 8px;
+    }
+
+    button {
+      font-size: map-get($font-sizes, small);
+      padding: 8px;
+    }
+  }
+}
