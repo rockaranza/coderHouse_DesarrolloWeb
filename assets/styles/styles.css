@@ -336,6 +336,145 @@ header {
 
 /* PAGINA ACTIVIDADES */
 
+/* Sección Hero */
+.heroSearch {
+  width: 100%;
+  height: 30rem;
+  margin: 3rem auto;
+  background-image: url('../images/pag2_hero_montreal.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchContainer {
+  background-color: white;
+  width: 70rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.searchContainer h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.searchContainer form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.searchContainer select {
+  width: 20rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.searchContainer button {
+  padding: 1rem 2rem;
+  border: none;
+  background: var(--blue-principal);
+  color: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 1.4rem;
+}
+
+.searchContainer button:hover {
+  background: var(--blue-secondary);
+}
+
+/* Sección actividades */
+
+.activitiesContainer {
+  display: flex;
+  margin: 4rem auto;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cardAct {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: var(--white-winter);
+  transition: box-shadow 0.3s ease;
+}
+
+.cardAct:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cardImage {
+  width: 33%;
+}
+
+.cardImage img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.cardText {
+  width: 66%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cardText h3 {
+  font-size: 2rem;
+  color: var(--blue-principal);
+  margin-bottom: 1rem;
+}
+
+.cardText p {
+  font-size: 1.4rem;
+  color: #555;
+}
+
+.cardText hr {
+  margin: 2rem 0;
+}
+.locationContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.cardText button {
+  background-color: var(--blue-principal);
+  width: 10rem;
+  font-size: 1.5rem;;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cardText button:hover {
+  background-color:var(--blue-secondary);
+}
+
+
 /* PAGINA TESTIMONIOS */
 .heroTestimonios{
   background-image: url('../images/frozenLake.jpg');
@@ -553,7 +692,60 @@ footer .footerContainer .socialMedia {
       width: 100%;
     }
   }
-  
+
+  /* ACTIVIDADES */
+  .heroSearch {
+    width: 80%;
+    height: 20rem;
+    padding: 1.5rem;
+    margin: 2rem auto;
+  }
+
+  .searchContainer {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .searchContainer h2 {
+    font-size: 1.8rem;
+  }
+
+  .searchContainer form {
+    flex-direction: row;
+    gap: 0.75rem;
+  }
+
+  .searchContainer select, .searchContainer button {
+    width: 100%;
+  }
+
+  .activitiesContainer {
+    width: 80%;
+    margin: 3rem auto;
+    gap: 1.5rem;
+  }
+
+  .cardAct {
+    flex-direction: column;
+  }
+
+  .cardImage {
+    width: 100%;
+  }
+
+  .cardText {
+    width: 100%;
+    padding: 1.2rem;
+  }
+
+  .cardText h3 {
+    font-size: 1.8rem;
+  }
+
+  .cardText p {
+    font-size: 1.3rem;
+  }
+
 
   /* TESTIMONIOS */
   .heroTestimonios{
@@ -641,7 +833,52 @@ footer .footerContainer .socialMedia {
       font-size: 1.2rem;
     }
   }
-  
+
+  /* ACTIVIDADES */
+  .heroSearch {
+    height: 20rem;
+    padding: 1rem;
+  }
+
+  .searchContainer {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .searchContainer h2 {
+    font-size: 1.6rem;
+  }
+
+  .searchContainer form {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .searchContainer select, .searchContainer button {
+    font-size: 1.2rem;
+  }
+
+  .activitiesContainer {
+    margin: 2rem auto;
+    gap: 1rem;
+  }
+
+  .cardText {
+    padding: 1rem;
+  }
+
+  .cardText h3 {
+    font-size: 1.6rem;
+  }
+
+  .cardText p {
+    font-size: 1.2rem;
+  }
+
+  .cardText button {
+    width: 100%;
+    font-size: 1.4rem;
+  }
 
   /* TESTIMONIOS */
   .heroTestimonios{
