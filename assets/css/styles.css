@@ -1,0 +1,545 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.citiesContainer .cityCard .activitiesList ul, ul, li {
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", serif;
+}
+
+main {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.citiesContainer .cityCard .activitiesList ul, ul, li {
+  list-style: none;
+}
+
+.active {
+  color: #074799 !important;
+  font-weight: 700;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 3rem auto;
+}
+.hero img {
+  width: 100%;
+  max-width: 1400px;
+  height: 60rem;
+  border-radius: 1.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero .heroText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem 4rem 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.hero .heroText h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.hero .heroText p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 1rem 0 3rem;
+}
+.hero .heroText a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 10px 20px;
+  background-color: #001A6E;
+  border-radius: 5px;
+}
+.hero .heroText a:hover {
+  background-color: #074799;
+}
+
+.activitiesHome {
+  margin: 4rem 0;
+}
+.activitiesHome h2 {
+  font-size: 2.4rem;
+  color: #001A6E;
+  font-weight: 700;
+  padding: 2rem 0;
+}
+
+.activities {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.activities h2 {
+  margin-bottom: 2rem;
+}
+.activities .activity {
+  max-width: 25rem;
+  background: #f0f0f0;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+.activities .activity img {
+  width: 100%;
+  height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.8rem;
+}
+.activities .activity h3 {
+  margin: 10px 0;
+  font-size: 1.6rem;
+}
+.activities .activity p {
+  margin: 3rem 0;
+  font-size: 1.4rem;
+  color: #555;
+}
+.activities .activity a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  background-color: #001A6E;
+  border-radius: 0.5rem;
+}
+.activities .activity a:hover {
+  background-color: #074799;
+}
+
+.whyUs {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+.whyUs h2 {
+  font-size: 2.4rem;
+  color: #001A6E;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.whyUs .whyUsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+.whyUs .whyUsContainer .whyUsText {
+  padding: 1rem 2rem;
+  text-align: left;
+}
+.whyUs .whyUsContainer .whyUsText p {
+  font-size: 1.4rem;
+}
+
+.newslettersContainer {
+  max-width: 1400px;
+  margin: 10rem auto;
+  text-align: center;
+}
+.newslettersContainer .newsletters {
+  background: url("../images/frozenLake.jpg") no-repeat center center/cover;
+  border-radius: 1.5rem;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.newslettersContainer .newsletters h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.newslettersContainer .newsletters form {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.newslettersContainer .newsletters form input {
+  padding: 1rem;
+  border: none;
+  border-radius: 5rem;
+  width: 25rem;
+  font-size: 1.6rem;
+}
+.newslettersContainer .newsletters form button {
+  padding: 1rem 2rem;
+  border: none;
+  background: #001A6E;
+  color: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 1.6rem;
+}
+.newslettersContainer .newsletters form button:hover {
+  background: #074799;
+}
+
+.aboutUsContainer {
+  max-width: 1400px;
+  margin: 10rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.aboutUsContainer .aboutUs, .aboutUsContainer .mapContainer {
+  width: 50%;
+}
+.aboutUsContainer .aboutUs {
+  padding: 2rem;
+}
+.aboutUsContainer .aboutUs h2 {
+  font-size: 2.4rem;
+  color: #001A6E;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.aboutUsContainer .aboutUs p {
+  font-size: 1.4rem;
+  color: #555;
+  line-height: 1.5;
+}
+.aboutUsContainer .mapContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.aboutUsContainer .mapContainer iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 1.5rem;
+}
+
+.heroSearch {
+  width: 100%;
+  height: 30rem;
+  margin: 3rem auto;
+  background-image: url("../images/pag2_hero_montreal.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heroSearch .searchContainer {
+  background-color: white;
+  width: 70rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.heroSearch .searchContainer h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.heroSearch .searchContainer form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+.heroSearch .searchContainer form select {
+  width: 20rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+}
+.heroSearch .searchContainer form button {
+  padding: 1rem 2rem;
+  border: none;
+  background: #001A6E;
+  color: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 1.4rem;
+}
+.heroSearch .searchContainer form button:hover {
+  background: #074799;
+}
+
+.activitiesContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem auto;
+  gap: 2rem;
+}
+.activitiesContainer .cardAct {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  transition: box-shadow 0.3s ease;
+}
+.activitiesContainer .cardAct:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.activitiesContainer .cardAct .cardImage {
+  width: 33%;
+}
+.activitiesContainer .cardAct .cardImage img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.activitiesContainer .cardAct .cardText {
+  width: 66%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.activitiesContainer .cardAct .cardText h3 {
+  font-size: 2rem;
+  color: #001A6E;
+  margin-bottom: 1rem;
+}
+.activitiesContainer .cardAct .cardText p {
+  font-size: 1.4rem;
+  color: #555;
+}
+.activitiesContainer .cardAct .cardText hr {
+  margin: 2rem 0;
+}
+.activitiesContainer .cardAct .cardText .locationContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.activitiesContainer .cardAct .cardText a {
+  background-color: #001A6E;
+  width: 10rem;
+  font-size: 1.6rem;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+.activitiesContainer .cardAct .cardText a:hover {
+  background-color: #074799;
+}
+
+.heroTitle {
+  color: #FFF;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.citiesContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 4rem auto;
+}
+.citiesContainer .cityCard {
+  max-width: 40rem;
+  margin: 2rem auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  color: #333;
+}
+.citiesContainer .cityCard h2 {
+  font-size: 2rem;
+  color: #001A6E;
+  font-weight: 700;
+}
+.citiesContainer .cityCard img {
+  width: 100%;
+  height: 20rem;
+  border-radius: 1.5rem;
+  margin-top: 1rem;
+}
+.citiesContainer .cityCard .cityDetails {
+  margin-top: 1.5rem;
+}
+.citiesContainer .cityCard .cityDetails .cityLocation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.6rem;
+  color: #555;
+}
+.citiesContainer .cityCard .cityDetails .cityInfo {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  color: #666;
+}
+.citiesContainer .cityCard .activitiesList h3 {
+  font-size: 2rem;
+  color: #00071E;
+  margin-top: 1.5rem;
+}
+.citiesContainer .cityCard .activitiesList ul {
+  padding: 0;
+  margin-top: 1rem;
+}
+.citiesContainer .cityCard .activitiesList ul li {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+.citiesContainer .cityCard .activitiesList ul li i {
+  color: #ffc107;
+}
+.citiesContainer .cityCard .buttons {
+  margin-top: 1.5rem;
+}
+.citiesContainer .cityCard .buttons .infoButton, .citiesContainer .cityCard .buttons .activitiesButton {
+  padding: 1rem 2rem;
+  border: none;
+  background: #001A6E;
+  color: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+.citiesContainer .cityCard .buttons .infoButton:hover, .citiesContainer .cityCard .buttons .activitiesButton:hover {
+  background-color: #074799;
+}
+
+.heroTestimonios {
+  background-image: url("../images/frozenLake.jpg");
+  width: 1140px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+
+.userPhoto {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.stars {
+  color: #ffc107;
+  margin-bottom: 10px;
+}
+
+.opinion {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.edadComentario {
+  color: #6c757d;
+  font-size: 1.4rem;
+}
+
+.contactContainer {
+  max-width: 1140px;
+  margin: 6rem auto;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.contactContainer .contactForm, .contactContainer .map {
+  flex: 1;
+}
+.contactContainer .contactForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contactContainer .contactForm form h1 {
+  color: #001A6E;
+  font-weight: 700;
+}
+.contactContainer .contactForm form input, .contactContainer .contactForm form textarea, .contactContainer .contactForm form button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contactContainer .contactForm form button {
+  background-color: #001A6E;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.contactContainer .contactForm form button:hover {
+  background-color: #074799;
+}
+.contactContainer .map iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #00071E;
+  color: #f0f0f0;
+  padding: 5rem 0;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+footer .footerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1140px;
+  margin: 0 auto;
+}/*# sourceMappingURL=styles.css.map */

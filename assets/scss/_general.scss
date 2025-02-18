@@ -1,0 +1,33 @@
+// _general.scss
+
+%reset-margin-padding {
+  margin: 0;
+  padding: 0;
+}
+
+%box-sizing-border-box {
+  box-sizing: border-box;
+}
+
+%list-style-none {
+  list-style: none;
+}
+
+* {
+  @extend %reset-margin-padding;
+  @extend %box-sizing-border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", serif;
+}
+
+main {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+ul, li {
+  @extend %list-style-none;
+}

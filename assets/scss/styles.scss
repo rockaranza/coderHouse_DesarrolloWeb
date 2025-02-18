@@ -1,0 +1,644 @@
+//Imports
+@import 'general';
+
+
+// Variables
+$colors: (
+  white-winter: #f0f0f0,
+  blue-principal: #001A6E,
+  blue-secondary: #074799,
+  blue-deep: #00071E
+);
+
+$font-sizes: (
+  small: 1.2rem,
+  medium: 1.4rem,
+  large: 1.6rem,
+  xlarge: 2rem,
+  xxlarge: 2.4rem,
+  xxxlarge: 2.5rem,
+  huge: 3rem
+);
+
+$breakpoints: (
+  tablet: 768px,
+  mobile: 480px
+);
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == tablet {
+    @media (max-width: map-get($breakpoints, tablet)) {
+      @content;
+    }
+  } @else if $breakpoint == mobile {
+    @media (max-width: map-get($breakpoints, mobile)) {
+      @content;
+    }
+  }
+}
+
+// Extends
+%reset-margin-padding {
+  margin: 0;
+  padding: 0;
+}
+
+%box-sizing-border-box {
+  box-sizing: border-box;
+}
+
+%list-style-none {
+  list-style: none;
+}
+
+//Menu
+.active {
+  color: map-get($colors, blue-secondary) !important;
+  font-weight: 700;
+}
+
+//Hero
+.hero {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 3rem auto;
+
+  img {
+    width: 100%;
+    max-width: 1400px;
+    height: 60rem;
+    border-radius: 1.5rem;
+    object-fit: cover;
+  }
+
+  .heroText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem 4rem 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+
+    h1 {
+      font-size: map-get($font-sizes, huge);
+      font-weight: 700;
+    }
+
+    p {
+      font-size: map-get($font-sizes, large);
+      font-weight: 400;
+      margin: 1rem 0 3rem;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-size: map-get($font-sizes, medium);
+      padding: 10px 20px;
+      background-color: map-get($colors, blue-principal);
+      border-radius: 5px;
+
+      &:hover {
+        background-color: map-get($colors, blue-secondary);
+      }
+    }
+  }
+}
+
+//Activities
+.activitiesHome {
+  margin: 4rem 0;
+
+  h2 {
+    font-size: map-get($font-sizes, xxlarge);
+    color: map-get($colors, blue-principal);
+    font-weight: 700;
+    padding: 2rem 0;
+  }
+}
+
+.activities {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  @include flex-row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+
+  .activity {
+    max-width: 25rem;
+    background: map-get($colors, white-winter);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+
+    img {
+      width: 100%;
+      height: 25rem;
+      object-fit: cover;
+      border-radius: 0.8rem;
+    }
+
+    h3 {
+      margin: 10px 0;
+      font-size: map-get($font-sizes, large);
+    }
+
+    p {
+      margin: 3rem 0;
+      font-size: map-get($font-sizes, medium);
+      color: #555;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-size: map-get($font-sizes, medium);
+      padding: 1rem 2rem;
+      background-color: map-get($colors, blue-principal);
+      border-radius: 0.5rem;
+
+      &:hover {
+        background-color: map-get($colors, blue-secondary);
+      }
+    }
+  }
+}
+
+//Why Us
+.whyUs {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 4rem 0;
+
+  h2 {
+    font-size: map-get($font-sizes, xxlarge);
+    color: map-get($colors, blue-principal);
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  .whyUsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+
+    .whyUsText {
+      padding: 1rem 2rem;
+      text-align: left;
+
+      p {
+        font-size: map-get($font-sizes, medium);
+      }
+    }
+  }
+}
+
+//Newsletters
+.newslettersContainer {
+  max-width: 1400px;
+  margin: 10rem auto;
+  text-align: center;
+
+  .newsletters {
+    background: url('../images/frozenLake.jpg') no-repeat center center/cover;
+    border-radius: 1.5rem;
+    padding: 4rem;
+    @include flex-column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+    h2 {
+      font-size: map-get($font-sizes, xxlarge);
+      font-weight: 700;
+      margin-bottom: 2rem;
+    }
+
+    form {
+      @include flex-row;
+      gap: 1rem;
+
+      input {
+        padding: 1rem;
+        border: none;
+        border-radius: 5rem;
+        width: 25rem;
+        font-size: map-get($font-sizes, large);
+      }
+
+      button {
+        padding: 1rem 2rem;
+        border: none;
+        background: map-get($colors, blue-principal);
+        color: #fff;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        font-size: map-get($font-sizes, large);
+
+        &:hover {
+          background: map-get($colors, blue-secondary);
+        }
+      }
+    }
+  }
+}
+
+//About Us
+.aboutUsContainer {
+  max-width: 1400px;
+  margin: 10rem auto;
+  @include flex-row;
+  justify-content: space-between;
+
+  .aboutUs, .mapContainer {
+    width: 50%;
+  }
+
+  .aboutUs {
+    padding: 2rem;
+
+    h2 {
+      font-size: map-get($font-sizes, xxlarge);
+      color: map-get($colors, blue-principal);
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: map-get($font-sizes, medium);
+      color: #555;
+      line-height: 1.5;
+    }
+  }
+
+  .mapContainer {
+    @include flex-center;
+    overflow: hidden;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 1.5rem;
+    }
+  }
+}
+
+//Activities Page
+.heroSearch {
+  width: 100%;
+  height: 30rem;
+  margin: 3rem auto;
+  background-image: url('../images/pag2_hero_montreal.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  @include flex-center;
+
+  .searchContainer {
+    background-color: white;
+    width: 70rem;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    h1 {
+      font-size: map-get($font-sizes, xlarge);
+      margin-bottom: 1rem;
+    }
+
+    form {
+      @include flex-row;
+      justify-content: center;
+      gap: 1rem;
+
+      select {
+        width: 20rem;
+        padding: 0.75rem;
+        border: 1px solid #ccc;
+        border-radius: 0.5rem;
+        font-size: map-get($font-sizes, medium);
+      }
+
+      button {
+        padding: 1rem 2rem;
+        border: none;
+        background: map-get($colors, blue-principal);
+        color: #fff;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        font-size: map-get($font-sizes, medium);
+
+        &:hover {
+          background: map-get($colors, blue-secondary);
+        }
+      }
+    }
+  }
+}
+
+.activitiesContainer {
+  @include flex-column;
+  margin: 4rem auto;
+  gap: 2rem;
+
+  .cardAct {
+    @include flex-row;
+    width: 100%;
+    margin: 2rem auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: map-get($colors, white-winter);
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .cardImage {
+      width: 33%;
+
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+      }
+    }
+
+    .cardText {
+      width: 66%;
+      padding: 1.5rem;
+      @include flex-column;
+      justify-content: center;
+
+      h3 {
+        font-size: map-get($font-sizes, xlarge);
+        color: map-get($colors, blue-principal);
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: map-get($font-sizes, medium);
+        color: #555;
+      }
+
+      hr {
+        margin: 2rem 0;
+      }
+
+      .locationContainer {
+        @include flex-row;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      a {
+        background-color: map-get($colors, blue-principal);
+        width: 10rem;
+        font-size: map-get($font-sizes, large);
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        text-decoration: none;
+
+        &:hover {
+          background-color: map-get($colors, blue-secondary);
+        }
+      }
+    }
+  }
+}
+
+//Destinations Page
+.heroTitle {
+  color: #FFF;
+  font-size: map-get($font-sizes, xxxlarge);
+  font-weight: 700;
+}
+
+.citiesContainer {
+  @include flex-row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 4rem auto;
+
+  .cityCard {
+    max-width: 40rem;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    color: #333;
+
+    h2 {
+      font-size: map-get($font-sizes, xlarge);
+      color: map-get($colors, blue-principal);
+      font-weight: 700;
+    }
+
+    img {
+      width: 100%;
+      height: 20rem;
+      border-radius: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .cityDetails {
+      margin-top: 1.5rem;
+
+      .cityLocation {
+        @include flex-row;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: map-get($font-sizes, large);
+        color: #555;
+      }
+
+      .cityInfo {
+        font-size: map-get($font-sizes, large);
+        margin-top: 1rem;
+        color: #666;
+      }
+    }
+
+    .activitiesList {
+      h3 {
+        font-size: map-get($font-sizes, xlarge);
+        color: map-get($colors, blue-deep);
+        margin-top: 1.5rem;
+      }
+
+      ul {
+        @extend %list-style-none;
+        padding: 0;
+        margin-top: 1rem;
+
+        li {
+          font-size: map-get($font-sizes, medium);
+          margin-bottom: 0.5rem;
+
+          i {
+            color: #ffc107;
+          }
+        }
+      }
+    }
+
+    .buttons {
+      margin-top: 1.5rem;
+
+      .infoButton, .activitiesButton {
+        padding: 1rem 2rem;
+        border: none;
+        background: map-get($colors, blue-principal);
+        color: #fff;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        font-size: map-get($font-sizes, medium);
+        text-decoration: none;
+
+        &:hover {
+          background-color: map-get($colors, blue-secondary);
+        }
+      }
+    }
+  }
+}
+
+//Testimonials Page
+.heroTestimonios {
+  background-image: url('../images/frozenLake.jpg');
+  width: 1140px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+
+.userPhoto {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.stars {
+  color: #ffc107;
+  margin-bottom: 10px;
+}
+
+.opinion {
+  font-size: map-get($font-sizes, large);
+  margin-bottom: 10px;
+}
+
+.edadComentario {
+  color: #6c757d;
+  font-size: map-get($font-sizes, medium);
+}
+
+//Contact Page
+.contactContainer {
+  max-width: 1140px;
+  margin: 6rem auto;
+  @include flex-row;
+  gap: 20px;
+
+  .contactForm, .map {
+    flex: 1;
+  }
+
+  .contactForm {
+    form {
+      @include flex-column;
+      gap: 10px;
+
+      h1 {
+        color: map-get($colors, blue-principal);
+        font-weight: 700;
+      }
+
+      input, textarea, button {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      button {
+        background-color: map-get($colors, blue-principal);
+        color: white;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+          background-color: map-get($colors, blue-secondary);
+        }
+      }
+    }
+  }
+
+  .map {
+    iframe {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+    }
+  }
+}
+
+footer {
+  background-color: map-get($colors, blue-deep);
+  color: map-get($colors, white-winter);
+  padding: 5rem 0;
+  font-size: map-get($font-sizes, medium);
+  letter-spacing: 1px;
+  line-height: 1.5;
+
+  .footerContainer {
+    @include flex-column;
+    justify-content: space-between;
+    width: 1140px;
+    margin: 0 auto;
+
+  }
+}
