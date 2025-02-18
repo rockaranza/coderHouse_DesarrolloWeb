@@ -474,6 +474,102 @@ header {
   background-color:var(--blue-secondary);
 }
 
+/* PAGINA DESTINOS */
+
+.heroTitle {
+  color: #FFF;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.citiesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 4rem auto;
+}
+
+.cityCard {
+  max-width: 40rem;
+  margin: 2rem auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  color: #333;
+}
+
+.cityCard h2 {
+  font-size: 2rem;
+  color: var(--blue-principal);
+  font-weight: 700;
+}
+
+.cityCard img {
+  width: 100%;
+  height: 20rem;
+  border-radius: 1.5rem;
+  margin-top: 1rem;
+}
+
+.cityDetails {
+  margin-top: 1.5rem;
+}
+
+.cityLocation {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.cityInfo {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #666;
+}
+
+.activitiesList h3 {
+  font-size: 1.8rem;
+  color: var(--blue-deep);
+  margin-top: 1.5rem;
+}
+
+.activitiesList ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.activitiesList li {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.activitiesList li i {
+  color: #ffc107;
+}
+
+.buttons {
+  margin-top: 1.5rem;
+}
+
+.infoButton, .activitiesButton {
+  padding: 1rem 2rem;
+  border: none;
+  background: var(--blue-principal);
+  color: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.infoButton:hover, .activitiesButton:hover {
+  background-color: var(--blue-secondary);
+}
+
 
 /* PAGINA TESTIMONIOS */
 .heroTestimonios{
@@ -746,6 +842,8 @@ footer .footerContainer .socialMedia {
     font-size: 1.3rem;
   }
 
+  /* DESTINOS */
+
 
   /* TESTIMONIOS */
   .heroTestimonios{
@@ -878,6 +976,12 @@ footer .footerContainer .socialMedia {
   .cardText button {
     width: 100%;
     font-size: 1.4rem;
+  }
+
+  /* DESTINOS */
+
+  .cityCard {
+    width: 90%;
   }
 
   /* TESTIMONIOS */
