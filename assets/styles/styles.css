@@ -458,7 +458,7 @@ header {
   margin-bottom: 1rem;
 }
 
-.cardText button {
+.cardText a {
   background-color: var(--blue-principal);
   width: 10rem;
   font-size: 1.5rem;;
@@ -468,9 +468,10 @@ header {
   border-radius: 0.5rem;
   cursor: pointer;
   transition: background 0.3s ease;
+  text-decoration: none;
 }
 
-.cardText button:hover {
+.cardText a:hover {
   background-color:var(--blue-secondary);
 }
 
